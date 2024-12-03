@@ -1,0 +1,16 @@
+{
+    "numAccounts": 3,
+    "numbers": [
+        "5492364655702",
+        "5492364655703",
+        "5492364655704",
+        "5492364655705",
+        "5492364655706",
+        "5492364655707"
+    ],
+    "message": "Hola, soy un mensaje automatizado.",
+    "qrTimeoutMs": 60000,
+    "delayBetweenMessagesMs": 1000,
+    "messagesBeforePause": 5,
+    "pauseDurationMinutes": 1
+}

@@ -1,0 +1,18 @@
+{
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "main": "multiwp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "install": "^0.13.0",
+    "npm": "^10.9.1",
+    "whatsapp-web.js": "^1.26.0",
+    "winston": "^3.17.0"
+  }
+}
