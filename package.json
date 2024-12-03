@@ -1,18 +1,18 @@
 {
   "name": "whatsapp-bulk-messenger",
   "version": "1.0.0",
-  "main": "multiwp.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "gabrielmiguelok",
   "license": "MIT",
-  "description": "",
+  "description": "Aplicación para enviar mensajes masivos a través de WhatsApp Web desde la terminal.",
   "dependencies": {
     "inquirer": "^8.2.6",
-    "install": "^0.13.0",
-    "npm": "^10.9.1",
     "whatsapp-web.js": "^1.26.0",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "qrcode-terminal": "^0.12.0"
   }
 }
