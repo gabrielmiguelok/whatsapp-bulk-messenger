@@ -221,7 +221,7 @@ Si tienes alguna pregunta o sugerencia, no dudes en abrir un **issue** en el rep
 
 - GitHub: [gabrielmiguelok](https://github.com/gabrielmiguelok)
 - Correo electrónico: [ceo@synara.ar](mailto:ceo@synara.ar)
-- Linkedin: [gabrielmiguelok](https://linkedin.com/gabrielmiguelok)
+- Linkedin: [gabrielmiguelok](https://www.linkedin.com/in/gabrielmiguelok/)
 
 
 ---
