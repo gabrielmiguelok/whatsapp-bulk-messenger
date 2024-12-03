@@ -1,12 +1,12 @@
 {
-  "name": "whatsapp",
+  "name": "whatsapp-bulk-messenger",
   "version": "1.0.0",
   "main": "multiwp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "gabrielmiguelok",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "inquirer": "^8.2.6",

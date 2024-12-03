@@ -1,4 +1,4 @@
-// multiwp.js
+// whatsapp-bulk-messenger
 
 // Importaciones necesarias
 const qrcode = require('qrcode-terminal');
