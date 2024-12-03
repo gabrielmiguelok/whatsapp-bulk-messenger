@@ -34,6 +34,7 @@ Este proyecto requiere las siguientes dependencias:
 - [whatsapp-web.js](https://github.com/mukulhase/WebWhatsapp-Wrapper) para interactuar con WhatsApp Web.
 - [winston](https://github.com/winstonjs/winston) para registrar logs.
 - [inquirer](https://github.com/SBoudrias/Inquirer.js) para la interfaz de usuario interactiva en consola.
+- [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) para generar códigos QR en la terminal.
 
 ---
 
@@ -85,7 +86,7 @@ Sigue estos sencillos pasos para instalar y ejecutar el proyecto:
 
 4. **Ejecuta el script**:
    ```bash
-   node whatsapp-bulk-messenger.js
+   npm start
    ```
 
    **Nota**: Durante la ejecución, se generarán códigos QR para cada cuenta. Escanéelos con la aplicación WhatsApp en tu teléfono para autenticar las cuentas.
@@ -121,37 +122,58 @@ El proyecto sigue una estructura modular, donde cada componente tiene una única
 
 ```
 whatsapp-bulk-messenger/
-├── node_modules/           # Dependencias instaladas
-├── whatsapp-bulk-messenger.js   # Script principal
-├── config.json             # Configuración del proyecto
-├── package.json            # Gestión de dependencias
-├── application.log         # Logs detallados
-├── README.md               # Documentación
+├── node_modules/              # Dependencias instaladas
+├── src/                       # Código fuente
+│   ├── index.js               # Script principal
+│   ├── WhatsAppClient.js      # Cliente de WhatsApp
+│   ├── WhatsAppClientManager.js  # Gestor de cuentas de WhatsApp
+│   ├── MessageService.js      # Servicio de envío de mensajes
+│   ├── ConversationManager.js # Gestor de conversaciones
+│   └── UserInterface.js       # Interfaz de usuario interactiva
+├── config.json                # Configuración del proyecto
+├── package.json               # Gestión de dependencias
+├── application.log            # Logs detallados
+├── README.md                  # Documentación
 ```
 
-### Clases Principales
+---
 
-#### `WhatsAppClient`
+## Clases Principales
+
+### `WhatsAppClient`
+
 Esta clase representa una cuenta individual de WhatsApp. Se encarga de gestionar la conexión con la API de WhatsApp Web, manejar el envío y la recepción de mensajes, y mostrar el código QR necesario para la autenticación.
 
 **Responsabilidad**: Conexión y manejo de mensajes para una cuenta específica.
 
-#### `WhatsAppClientManager`
+---
+
+### `WhatsAppClientManager`
+
 Gestiona múltiples instancias de `WhatsAppClient`, coordinando las conexiones y asegurando que todas las cuentas estén listas para enviar mensajes.
 
 **Responsabilidad**: Administración de las cuentas de WhatsApp.
 
-#### `MessageService`
+---
+
+### `MessageService`
+
 Es la clase encargada del envío de mensajes masivos. Organiza el envío de mensajes en lotes y maneja las pausas entre ellos.
 
 **Responsabilidad**: Enviar mensajes de manera eficiente y gestionada.
 
-#### `ConversationManager`
+---
+
+### `ConversationManager`
+
 Administra las conversaciones, manteniendo un registro de todos los mensajes enviados y recibidos. Permite acceder a las conversaciones y mostrar sus detalles.
 
 **Responsabilidad**: Gestión y almacenamiento de conversaciones.
 
-#### `UserInterface`
+---
+
+### `UserInterface`
+
 Proporciona la interfaz interactiva para la gestión de respuestas. Permite al usuario seleccionar a qué conversaciones responder y qué mensaje enviar.
 
 **Responsabilidad**: Interacción con el usuario a través de la línea de comandos.
@@ -198,8 +220,9 @@ Este proyecto está licenciado bajo la **Licencia MIT**. Consulta el archivo [LI
 Si tienes alguna pregunta o sugerencia, no dudes en abrir un **issue** en el repositorio o contactar al autor:
 
 - GitHub: [gabrielmiguelok](https://github.com/gabrielmiguelok)
-- Correo electrónico: [contact@gabrielmiguelok.com](mailto:contact@gabrielmiguelok.com)
+- Correo electrónico: [ceo@synara.ar](mailto:ceo@synara.ar)
+- Linkedin: [gabrielmiguelok](https://linkedin.com/gabrielmiguelok)
+
 
 ---
 
-¡Gracias por usar `whatsapp-bulk-messenger`! 🎉
